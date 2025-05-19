@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Blush & Bloom Spa</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+      
+          <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/new_logo.png">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body class="home-page">
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="heart-spinner">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+      </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap">
+                                <a href="https://maps.app.goo.gl/MwfwvxWQXLrvBXGS7" class="me-4 text-light" target="_blank"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>(+1) 868-123-4567</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>info@blushandbloom.com</a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                      <a href="index.html" class="navbar-brand navbar-brand ms-5">
+                        <img src="img/new_logo.png" alt="Blush & Bloom Spa Logo"> 
+                      </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu m-0 rounded-0">
+                                        <a href="team.html" class="dropdown-item">Team</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="text" id="searchInput" class="form-control p-3" placeholder="Search for Services....." aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+      
+     
+
+        <!-- Carousel Start -->
+        <div class="container-fluid carousel-header px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/carousel-1.jpg" class="img-fluid" alt="Image of a woman enjoying a relaxing massage at Blush & Bloom Spa">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3">Blush & Bloom Spa</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Massage Treatment</h1>
+                                <h1 class="mx-md-5 fs-4 px-4 mb-5 text-dark">Massage Treatment</h1>
+                            <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Indulge in a rejuvenating deep tissue massage designed to release tension and elevate your wellness journey.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="service.html">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="appointment.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-2.jpg" class="img-fluid" alt="Image of a woman receiving a rejuvenating facial treatment">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Blush & Bloom Spa</h4>
+                                <h1 class="display-1 text-capitalize text-dark mb-3">Facial Treatment</h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Indulge in our deluxe facial experience, designed to rejuvenate, hydrate, and reveal your skin’s natural glow.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="service.html">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="appointment.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel-3.jpg" class="img-fluid" alt="Image of a female receiving a cellulite reduction treatment">
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-3" style="letter-spacing: 3px;">Blush & Bloom Spa</h4>
+                                <h1 class="display-1 text-capitalize text-dark">Cellulite Treatment</h1>
+                                <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Indulge in our premium cellulite treatment designed to firm, sculpt, and rejuvenate your skin. Reveal a smoother, more radiant skin with every visit.</p>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="service.html">Get Start</a>
+                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="appointment.html">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-center text-primary">Our Service</p>
+                    <h1 class="display-3">Blush & Bloom Spa</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Skin Care</h3>
+                                        <p>We offer customized facials and treatments designed to cleanse, hydrate, and rejuvenate your skin for a healthy glow.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-1.jpg" class="img-fluid rounded" alt="Image of a client enjoying a relaxing facial treatment at Blush & Bloom Spa">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-2.jpg" class="img-fluid rounded" alt="Image of a manicurist giving a relaxing pedicure treatment at Blush & Bloom Spa">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Manicures & Pedicures</h3>
+                                        <p>Relax with a soothing treatment that leaves your nails fresh, polished, and perfectly styled for any occasion.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Sauna</h3>
+                                        <p>Relax and rejuvenate with our sauna service, designed to improve circulation, detoxify, and reduce stress.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-3.jpg" class="img-fluid rounded" alt="Image of a woman relaxing inside a warm sauna">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-4.jpg" class="img-fluid rounded" alt="Image of a woman receiving a facial treatment for glowing skin">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Facial Therapy</h3>
+                                        <p>Facial therapy refreshes your skin by cleansing, exfoliating, and targeting concerns like aging, dryness, and uneven tone.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Body Massage</h3>
+                                        <p>Relax and recharge with a soothing body massage performed by our expert therapists, leaving you refreshed and renewed.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-5.jpg" class="img-fluid rounded" alt="Image of a female client receiving a relaxing body massage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-6.jpg" class="img-fluid rounded" alt="Image of client enjoying an aromatic therapy session with essential oils">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Aroma Therapy</h3>
+                                        <p>Aromatherapy uses essential oils to relax, energize, and restore balance, offering a calming experience for your body and mind.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Paraffin Wax Treatments</h3>
+                                        <p>Soften and hydrate dry skin, boost circulation, and ease joint pain with our soothing Paraffin Wax Treatment.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-7.jpg" class="img-fluid rounded" alt="Image of Person receiving a paraffin wax treatment for hands">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-8.jpg" class="img-fluid rounded" alt="Image of a couple Female and Male client receiving stone therapy with warm and cool stones">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Stone Therapy</h3>
+                                        <p>Stone Therapy uses warm and cool stones to relax muscles, reduce tension, and promote overall well-being.</p>
+                                        <a href="#appointment" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="services-btn text-center">
+                            <a href="#pricing" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Service More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="video">
+                            <img src="img/about-1.jpg" class="img-fluid rounded" alt="">
+                            <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                                <img src="img/about-2.jpg" class="img-fluid rounded" alt="">
+                            </div>
+                            <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="img/spa_video.mp4" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="fs-4 text-uppercase text-primary">About Us</p>
+                        <h1 class="display-4 mb-4">Blush & Bloom: Your Sanctuary for Relaxation</h1>
+                        <p class="mb-4">At Blush & Bloom, we’re all about helping you relax, recharge, and feel your best. Whether it’s a soothing massage or a revitalizing facial, we’re here to give you a spa experience that leaves you glowing inside and out.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fab fa-gitkraken fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Loyalty Program</h5>
+                                        <p class="mb-0">Join our Loyalty Program and start earning rewards with every visit! The more you treat yourself to our services, the more perks you get. It’s our way of saying thank you for being part of the Blush & Bloom family.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-gift fa-3x text-primary"></i>
+                                    <div class="ms-4">
+                                        <h5 class="mb-2">Spa Vouchers</h5>
+                                        <p class="mb-0">Give the gift of relaxation with our Spa Vouchers! Perfect for birthdays, anniversaries, or just because. Treat someone special to a day of pampering at Blush & Bloom, or spoil yourself with a voucher for your next visit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="my-4">We’re all about making sure you feel your best when you leave Blush & Bloom. Whether you’re here for a quick getaway or a full day of pampering, we’ll take care of you like family. Come unwind, relax, and leave with a glow!
+                        </p>
+                        <p class="mb-4">Our spa is a serene escape from the everyday hustle. With top-notch treatments and a team that genuinely cares, we’re here to provide you with a personalized experience that’s second to none.
+                        </p>
+                        <a href="#gallery" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Explore More</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9">
+                  <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Appointment Start -->
+        <div id="appointment" class="container-fluid appointment py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="appointment-form p-5">
+                            <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
+                            <h1 class="display-4 mb-4 text-white">Get Appointment</h1>
+                            <form>
+                            <div class="row gy-3 gx-4">
+                              <!-- First Name -->
+                              <div class="col-lg-6">
+                                <input type="text" id="firstName" class="form-control py-3 border-white bg-transparent custom-input text-white" placeholder="First Name" required>
+                              </div>
+
+                              <!-- Email -->
+                              <div class="col-lg-6">
+                                <input type="email" id="email" class="form-control py-3 border-white bg-transparent custom-input text-white" placeholder="Email" required>
+                              </div>
+
+                              <!-- Plan Dropdown (styled like input) -->
+                             <div class="col-lg-6">
+                              <div class="dropdown w-100">
+                                <button class="form-control py-3 border-white bg-transparent custom-input text-white text-start dropdown-toggle text-truncate" 
+                                        type="button" id="planDropdown" data-bs-toggle="dropdown" aria-expanded="false" 
+                                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                  Select from available plans
+                                </button>
+                                <ul class="dropdown-menu w-100" aria-labelledby="planDropdown">
+                                  <li><button class="dropdown-item" type="button"> Select from available plans</button></li>
+                                  <li><button class="dropdown-item" type="button">Basic Plan</button></li>
+                                  <li><button class="dropdown-item" type="button">Family Plan</button></li>
+                                  <li><button class="dropdown-item" type="button">VIP Plan</button></li>
+                                  <li><button class="dropdown-item" type="button">Glow Plan</button></li>
+                                </ul>
+                              </div>
+                              <input type="hidden" id="service" name="service">
+                            </div>
+
+                              <!-- Date -->
+                              <div class="col-lg-6">
+                                <input type="date" id="date" class="form-control py-3 border-white bg-transparent custom-input text-white" required>
+                              </div>
+
+                              <!-- Comments -->
+                              <div class="col-lg-12">
+                                <textarea class="form-control border-white bg-transparent custom-textarea text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+                              </div>
+
+                              <!-- Submit Button -->
+                              <div class="col-lg-12">
+                                <button type="submit" id="submitBtn" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">SUBMIT NOW</button>
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="appointment-time p-5">
+                            <h1 class="display-5 mb-4">Opening Hours</h1>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Monday:</p>
+                                <p>09:00 am – 06:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Tuesday:</p>
+                                <p>09:00 am – 06:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Wednesday:</p>
+                                <p>09:00 am – 06:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Thursday:</p>
+                                <p>09:00 am – 06:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white">
+                                <p>Friday:</p>
+                                <p>09:00 am – 06:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                                <p>Saturday:</p>
+                                <p>09:00 am – 04:00 pm</p>
+                            </div>
+                            <div class="d-flex justify-content-between fs-5 text-white mb-4">
+                                <p>Sunday:</p>
+                                <p>CLOSED</p>
+                            </div>
+                            <p class="text-dark">Check out seasonal discounts for best offers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Appointment End -->
+
+
+        <!-- Gallery Start -->
+        <div id="gallery" class="container-fluid gallery py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">Our Gallery</p>
+                    <h1 class="display-4 mb-4">Let's See Our Gallery</h1>
+                </div>
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                <span class="text-dark" style="width: 150px;">All Gallery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                <span class="text-dark" style="width: 150px;">Skin Care</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                <span class="text-dark" style="width: 150px;">Sauna</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                <span class="text-dark" style="width: 150px;">Stone Therapy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                <span class="text-dark" style="width: 150px;">Manicure & Pedicure</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-1.jpg" alt="Image of woman enjoyeing her facial treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Skin Care</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-1.jpg" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="Image of two females in a warm sauna room">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Sauna</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-2.jpg" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-3.jpg" alt="Image of a female client receiving a stone therapy">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Stone Therapy</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-3.jpg" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-4.jpg" alt="Image of a female client receiving a facial massage">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Face Massage</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-4.jpg" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-5.jpg" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Manicure & Pedicure</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-5.jpg" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-6.jpg" alt="Image of a woman and man enjoying a full body massage from a massage therapist">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Body Massage</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-6.jpg" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-7.jpg" alt="Image of a woman enjoying a aroma therapy massage">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Aroma Therapy</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-7.jpg" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-8.jpg" alt="Image of a female receving a paraffin wax treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Paraffin Wax Treatment</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-8.jpg" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-9.jpg" alt="Image of a woman receiving a skin care treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Skin Care</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-9.jpg" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-10.jpg" alt="Image of a woman receiving a skin care treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Skin Care</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-10.jpg" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-11.jpg" alt="Image of a woman receiving a skin care treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Skin Care</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-11.jpg" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-1.jpg" alt="Image of a woman receiving a skin care treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Skin Care</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-1.jpg" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-12.jpg" alt="Image of a woman enjoying her time in the sauna">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Sauna</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-12.jpg" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-13.jpg" alt="Image of a woman enjoying her time in the sauna">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Sauna</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-13.jpg" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="Image of a woman enjoying her time in the sauna">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Sauna</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-2.jpg" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-14.jpg" alt="Image of a couple man and woman enjoying their time in the sauna">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Sauna</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-14.jpg" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-15.jpg" alt="Image of a female receivng a hot stone treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Stone Therapy</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-15.jpg" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-16.jpg" alt="Image of a female receivng a hot stone treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Stone Therapy</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-16.jpg" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-3.jpg" alt="Image of a female receivng a hot stone treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Stone Therapy</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-3.jpg" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-17.jpg" alt="Image of a man receivng a hot stone treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Stone Therapy</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-17.jpg" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-18.jpg" alt="Image of a woman receiving a pedicure treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Manicure & Pedicure</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-18.jpg" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-19.jpg" alt="Image of a woman receiving a manicure treatment">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Manicure & Pedicure</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-19.jpg" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-20.jpg" alt="Image of a man receiving a pedicure treatment from a specialist">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Manicure & Pedicure</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-21.jpg" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="img/gallery-21.jpg" alt="Image of a woman receiving a pedicure treatment from specialist">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Manicure & Pedicure</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="img/gallery-21.jpg" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery End -->
+
+
+        <!-- Pricing Start -->
+        <div id="pricing" class="container-fluid pricing py-5">
+            <div class="container py-5">
+                <div class="owl-carousel pricing-carousel">
+                    <div class="pricing-item">
+                        <div class="rounded pricing-content">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>350<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>30-Min Body Massage</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Aroma Hand Care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Express Facial Clense</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Foot + Nail Care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Complimentary Herbal Tea </p>
+                                <a href="service.html" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>650<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Couples Massage</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Kids' Mini Spa</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Therapy</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Foot Soak & Scrub</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Free Spa Tea Set</p>
+                                <a href="service.html" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                          <div class="pricing-content rounded">
+                              <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                  <h1 class="display-4 mb-0">
+                                      <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>500<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                  </h1>
+                                  <h5 class="text-primary text-uppercase m-0">Glow Plan</h5>
+                              </div>
+                              <div class="p-4">
+                                  <p><i class="fa fa-check text-primary me-2"></i>Bi-weekly treatments</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>20% off Premium Services</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>Early access to specials</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>Monthly Guest Pass</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>Birthday Freebie</p>
+                                  <a href="service.html" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                              </div>
+                          </div>
+                      </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>950<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>90-Min Body Massage</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Gold Facial Treatment</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Aroma Stone Therapy</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Glow Body Polish</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>VIP Lounge + Drinks</p>
+                                <a href="service.html" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">Spa Specialist</p>
+                    <h1 class="display-4 mb-4">Blush & Bloom Spa</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/team-1.jpg" class="img-fluid w-100 rounded-top bg-light" alt="Image of a woman who is a Cellulite & body contouring expert">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Jada Singh</h3>
+                                <p class="mb-0 text-white">Cellulite & Body Contouring Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/team-2.jpg" class="img-fluid w-100 rounded-top bg-light" alt="Image of a woman who is a beauty & skincare specialist">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Tiana Maharaj</h3>
+                                <p class="mb-0 text-white">Beauty & Skincare Specialist Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/team-3.jpg" class="img-fluid w-100 rounded-top bg-light" alt="Image of a woman who is a Aromatherapy & Relaxation Expert">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Nadia Lopez</h3>
+                                <p class="mb-0 text-white">Aromatherapy & Relaxation Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="team-item">
+                            <div class="team-img rounded-top">
+                                <img src="img/team-4.jpg" class="img-fluid w-100 rounded-top bg-light" alt="Image of a woman who is a Massage & Spa Therapy Expert">
+                            </div>
+                            <div class="team-text rounded-bottom text-center p-4">
+                                <h3 class="text-white">Kia James</h3>
+                                <p class="mb-0 text-white">Massage & Spa Therapy Expert</p>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+         <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-primary">Testimonial</p>
+                    <h1 class="display-4 mb-4 text-white">What Our Clients Say!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Eva Collins</h4>
+                                        <p class="m-0 text-white">Flight Attendant</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Long flights and jet lag stress me out, but the Aromatherapy Full Body Massage at Blush & Bloom melts all the tension. It's my go-to ritual when I land in Trinidad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Tariq Khan</h4>
+                                        <p class="m-0 text-white">Entrepreneur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">Best facial ever at Blush & Bloom Spa! The staff was amazing, and I felt the difference right away. Highly recommend it to all my friends!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="d-flex flex-column mx-auto">
+                                    <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                        <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mb-2 text-primary">Isla Evans</h4>
+                                        <p class="m-0 text-white">Programmer/Analyst</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="position-absolute" style="top: 20px; right: 25px;">
+                                    <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="d-flex mb-4">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="fs-5 mb-0 text-white">After coding all day, Blush & Bloom Spa is my escape. The neck and shoulder massage is a game-changer. Perfect for techies feeling burnt out.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-12">
+                        <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Address</h4>
+                                        <p class="mb-0">#45 Ariapita Ave, Port of Spain</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Email Us</h4>
+                                        <p class="mb-0">info@blushandbloom.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                    <div>
+                                        <h4>Telephone</h4>
+                                        <p class="mb-0">(+1) 868-123-4567</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="rounded">
+                            <iframe class="rounded-top w-100" 
+                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.745623210724!2d-61.5220609!3d10.6679433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c3cfb0e93db8b65%3A0x8b9283a9cf59cf57!2s45%20Ariapita%20Ave%2C%20Woodbrook%2C%20Port%20of%20Spain%2C%20Trinidad%20and%20Tobago!5e0!3m2!1sen!2sus!4v1681456766330!5m2!1sen!2sus" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class=" text-center p-4 rounded-bottom bg-primary">
+                            <h4 class="text-white fw-bold">Follow Us</h4>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">🌸 Blush & Bloom Newsletter</h4>
+                            <p class="text-white">Stay in the loop with the latest spa tips, exclusive offers, and self-care inspo. Sign up and let us bring a little peace, pampering, and positivity to your inbox. Your glow-up journey starts here 💌</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Our Services</h4>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Facials</a>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Body Massage</a>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Message</a>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Sauna</a>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Cellulite Treatments</a>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Aroma Therapy</a>
+                            <a href="#gallery"><i class="fas fa-angle-right me-2"></i> Stone Spa</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Schedule</h4>
+                            <p class="mb-0">Monday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <p class="mb-0">Wednesday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <p class="mb-0">Saturday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <h4 class="my-4 text-white">Address</h4>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> #45 Ariapita Ave, Woodbrook, Port of Spain</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Follow Us</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                            <h4 class="my-4 text-white">Contact Us</h4>
+                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> info@blushandbloom.com</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+1) 868-123-4567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Blush & Bloom Spa</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+      
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Grab elements once
+    const form = document.querySelector('form');
+    const dropdownButton = document.getElementById('planDropdown');
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const hiddenServiceInput = document.getElementById('service');
+    const submitBtn = document.getElementById('submitBtn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    // Dropdown item click handler
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', function () {
+        const selectedPlan = this.textContent.trim();
+        dropdownButton.textContent = selectedPlan;
+        hiddenServiceInput.value = selectedPlan === "Select from available plans" ? '' : selectedPlan;
+        dropdownButton.style.color = '#b3b3b3'; // Always keep it styled
+      });
+    });
+
+    // Close dropdown if clicking outside
+    document.addEventListener('click', function (event) {
+      if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        const dropdownInstance = bootstrap.Dropdown.getInstance(dropdownButton);
+        if (dropdownInstance) {
+          dropdownInstance.hide();
+        }
+      }
+    });
+
+    // Form submit / button click
+    submitBtn.addEventListener('click', function (event) {
+      event.preventDefault(); // Stop default button behavior
+
+      const firstName = document.getElementById('firstName');
+      const email = document.getElementById('email');
+      const date = document.getElementById('date');
+      const service = hiddenServiceInput.value;
+      let isValid = true;
+
+      // Reset error states first
+      [firstName, email, date].forEach(field => {
+        field.classList.remove('border-danger', 'shake');
+        if (field.value.trim() === '') {
+          field.classList.add('border-danger', 'shake');
+          isValid = false;
+          setTimeout(() => field.classList.remove('shake'), 300);
+        }
+      });
+
+      // Validate dropdown selection
+      dropdownButton.classList.remove('border-danger', 'shake');
+      if (!service || service.toLowerCase().includes('select')) {
+        dropdownButton.classList.add('border-danger');
+        void dropdownButton.offsetWidth; // Force reflow to restart shake
+        dropdownButton.classList.add('shake');
+        isValid = false;
+        setTimeout(() => dropdownButton.classList.remove('shake'), 300);
+      }
+
+      // Final result
+      if (isValid) {
+        alert('✅ Your appointment was submitted successfully!');
+        form.reset(); // Clear form
+        dropdownButton.textContent = 'Select from available plans'; // Reset dropdown button text
+        hiddenServiceInput.value = ''; // Clear hidden input
+      } else {
+        alert('❌ Oops! Please fill in all required fields.');
+      }
+    });
+  });
+</script>
+      <script>
+  const videoModal = document.getElementById('videoModal');
+  const video = document.getElementById('video');
+  
+  // When the modal is shown, set the video source and play it
+  videoModal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;  // Button that triggered the modal
+    const videoSrc = button.getAttribute('data-src'); // Get the video source from data-src
+    video.src = videoSrc + "?autoplay=1"; // Set video source and add autoplay
+  });
+
+  // When the modal is hidden, stop the video by removing the src (this will pause the video)
+  videoModal.addEventListener('hidden.bs.modal', function () {
+    video.src = '';  // This will stop the video and reset the iframe
+  });
+</script>
+
+
+      
+    </body>
+    
+</html>

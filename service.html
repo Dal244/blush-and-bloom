@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Blush & Bloom Spa</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+      
+         <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/new_logo.png">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .breadcrumb-item + .breadcrumb-item::before {
+              color: #cccccc; 
+              font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body class="price-page">
+
+         <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+          <div class="heart-spinner">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+      </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="container-fluid topbar d-none d-lg-block">
+                <div class="container px-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap">
+                                <a href="https://maps.app.goo.gl/MwfwvxWQXLrvBXGS7" class="me-4 text-light" target="_blank"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                                <a href="#" class="me-4 text-light"><i class="fas fa-phone-alt text-primary me-2"></i>(+1) 868-123-4567</a>
+                                <a href="#" class="text-light"><i class="fas fa-envelope text-primary me-2"></i>info@blushandbloom.com</a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="me-3 btn-square border rounded-circle nav-fill"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn-square border rounded-circle nav-fill"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-light">
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl">
+                      <a href="index.html" class="navbar-brand navbar-brand ms-5">
+                        <img src="img/new_logo.png" alt="Blush & Bloom Spa Logo"> 
+                      </a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto border-top">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="service.html" class="nav-item nav-link">Services</a>
+                                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                        <a href="team.html" class="dropdown-item">Team</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                                <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                                <a href="appointment.html" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-4 ms-4">Book Appointment</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb py-5">
+            <div class="container text-center py-5">
+                <h1 class="text-white display-3 mb-4">Our Services/Price Plans</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white">Service Page</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+        
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                    <p class="fs-4 text-uppercase text-center text-primary">Our Service</p>
+                    <h1 class="display-3">Blush & Bloom Spa</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Skin Care</h3>
+                                        <p>We offer customized facials and treatments designed to cleanse, hydrate, and rejuvenate your skin for a healthy glow.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-1.jpg" class="img-fluid rounded" alt="Image of a client enjoying a relaxing facial treatment at Blush & Bloom Spa">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-2.jpg" class="img-fluid rounded" alt="Image of a manicurist giving a relaxing pedicure treatment at Blush & Bloom Spa">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Manicures & Pedicures</h3>
+                                        <p>Unwind with a soothing manicure or pedicure. Our services will leave your nails looking fresh, polished, and beautifully styled, perfect for any occasion.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Sauna</h3>
+                                        <p>Relax and rejuvenate with our sauna service, designed to improve circulation, detoxify, and reduce stress.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-3.jpg" class="img-fluid rounded" alt="Image of a woman relaxing inside a warm sauna">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-4.jpg" class="img-fluid rounded" alt="Image of a woman receiving a facial treatment for glowing skin">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Facial Therapy</h3>
+                                        <p>Facial therapy cleanses, exfoliates, and nourishes your skin, targeting concerns like aging, dryness, and uneven tone for a fresh, glowing complexion.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Body Massage</h3>
+                                        <p>Relax and unwind with a soothing body massage. Our expert therapists use calming techniques to ease tension and leave you feeling refreshed.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-5.jpg" class="img-fluid rounded" alt="Image of a female client receiving a relaxing body massage">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-6.jpg" class="img-fluid rounded" alt="Image of client enjoying an aromatic therapy session with essential oils">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Aroma Therapy</h3>
+                                        <p>Aromatherapy uses essential oils to relax, energize, and restore balance, offering a calming experience for your body and mind.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <div class="services-content text-end">
+                                        <h3>Paraffin Wax Treatments</h3>
+                                        <p>Experience the soothing benefits of a Paraffin Wax Treatment to soften and moisturize dry skin, improve circulation, and relieve joint pain.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-7.jpg" class="img-fluid rounded" alt="Image of Person receiving a paraffin wax treatment for hands">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="services-item bg-light border-4 border-start border-primary rounded p-4">
+                            <div class="row align-items-center">
+                                <div class="col-4">
+                                    <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                        <img src="img/services-8.jpg" class="img-fluid rounded" alt="Image of a couple Female and Male client receiving stone therapy with warm and cool stones">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="services-content text-start">
+                                        <h3>Stone Therapy</h3>
+                                        <p>Stone Therapy uses warm and cool stones to relax muscles, reduce tension, and promote overall well-being.</p>
+                                        <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">Make Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="services-btn text-center">
+                            <a href="#" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">Service More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+      
+      
+        <!-- Pricing Start -->
+        <div id="pricing" class="container-fluid pricing py-5">
+            <div class="container py-5">
+                <div class="owl-carousel pricing-carousel">
+                    <div class="pricing-item">
+                        <div class="rounded pricing-content">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>350<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>30-Min Body Massage</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Aroma Hand Care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Express Facial Clense</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Foot + Nail Care</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Complimentary Herbal Tea </p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>650<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>Couples Massage</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Kids' Mini Spa</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Hot Stone Therapy</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Foot Soak & Scrub</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Free Spa Tea Set</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-item">
+                          <div class="pricing-content rounded">
+                              <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                  <h1 class="display-4 mb-0">
+                                      <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>500<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                  </h1>
+                                  <h5 class="text-primary text-uppercase m-0">Glow Plan</h5>
+                              </div>
+                              <div class="p-4">
+                                  <p><i class="fa fa-check text-primary me-2"></i>Bi-weekly treatments</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>20% off Premium Services</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>Early access to specials</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>Monthly Guest Pass</p>
+                                  <p><i class="fa fa-check text-primary me-2"></i>Birthday Freebie</p>
+                                  <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                              </div>
+                          </div>
+                      </div>
+                    <div class="pricing-item">
+                        <div class="pricing-content rounded">
+                            <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                <h1 class="display-4 mb-0">
+                                    <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">$</small>950<small class="text-muted" style="font-size: 16px; line-height: 40px;">/Mo</small>
+                                </h1>
+                                <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
+                            </div>
+                            <div class="p-4">
+                                <p><i class="fa fa-check text-primary me-2"></i>90-Min Body Massage</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Gold Facial Treatment</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Aroma Stone Therapy</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>Glow Body Polish</p>
+                                <p><i class="fa fa-check text-primary me-2"></i>VIP Lounge + Drinks</p>
+                                <a href="" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+      
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 mt-6">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="mb-4 text-white">🌸 Blush & Bloom Newsletter</h4>
+                            <p class="text-white">Stay in the loop with the latest spa tips, exclusive offers, and self-care inspo. Sign up and let us bring a little peace, pampering, and positivity to your inbox. Your glow-up journey starts here 💌</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Our Services</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Facials</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Body Massage</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Message</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Sauna</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Cellulite Treatments</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Aroma Therapy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Stone Spa</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Schedule</h4>
+                            <p class="mb-0">Monday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <p class="mb-0">Wednesday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <p class="mb-0">Saturday: <span class="text-white"> 09:00 am – 06:00 pm</span></p>
+                            <h4 class="my-4 text-white">Address</h4>
+                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> #45 Ariapita Ave, Woodbrook, Port of Spain</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Follow Us</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                            <h4 class="my-4 text-white">Contact Us</h4>
+                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> info@blushandbloom.com</p>
+                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> (+1) 868-123-4567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Blush & Bloom Spa</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center">
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
